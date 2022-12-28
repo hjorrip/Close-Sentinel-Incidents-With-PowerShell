@@ -1,5 +1,5 @@
 # Close-Sentinel-Incidents-With-PowerShell
-
+```
 $rg = "<resource-group>" # UPDATE!
 $wsn = "<workspace-name>" # UPDATE!! 
 
@@ -13,3 +13,4 @@ foreach ($object in $res) { Write-Output "Provider:$($object.Provider) - Provide
 foreach ($object in $res) {
         Update-AzSentinelIncident -ResourceGroupName $rg -WorkspaceName $wsn -Id $object.Name -Title $object.Title -Severity $object.Severity -Classification 'Undetermined' -Status 'Closed' -Whatif
 }
+```
