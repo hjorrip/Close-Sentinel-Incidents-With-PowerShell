@@ -1,4 +1,4 @@
-# Close-Sentinel-Incidents-With-PowerShell
+# Close Sentinel Incidents With PowerShell (Azure Cloud Shell)
 ```
 $rg = "<resource-group>" # UPDATE!
 $wsn = "<workspace-name>" # UPDATE!! 
